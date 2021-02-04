@@ -17,5 +17,3 @@ ReactDOM.render(
 if (import.meta.hot) {
   import.meta.hot.accept();
 }
-
-console.log("Hello World! You did! Welcome to Snowpack :D");

@@ -1,9 +1,22 @@
 import React, { useState, useEffect, useCallback } from "react";
 import logo from "./logo.svg";
-import "./App.css";
 
 /**
- * TODO:
+ * TODO: Import Fonts
+ *
+ * TODO: set theme (colors, font weights, etc)
+ *    TODO: Set Sidebar Layout
+ *    TODO: Set Main Panel Layout
+ *
+ * TODO: create sign-in page & form
+ *    TODO: Style Form Inputs
+ *    TODO: Create onchange handler for each input
+ *    TODO: Handle Form Submission
+ *
+ * TODO: create password reset page
+ *    TODO: Handle reset Form Submission
+ *
+ * TODO: create dismissible notification
  *
  *
  */

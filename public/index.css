@@ -1,4 +1,5 @@
 /* Add CSS styles here! */
+@import "node_modules/modern-normalize/modern-normalize.css";
 body {
   font-family: sans-serif;
 }
