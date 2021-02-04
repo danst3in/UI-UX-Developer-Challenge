@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import logo from "./logo.svg";
 
 /**
@@ -21,14 +22,25 @@ import logo from "./logo.svg";
  *
  */
 
+const AppWrapper = styled.div`
+  display: grid;
+  grid-template-rows: auto 50px;
+  grid-template-columns: 600px 7fr;
+  height: 100vh;
+  text-align: center;
+  p {
+    margin: 0.4rem;
+  }
+`;
+
 function App() {
   return (
-    <div className="App">
+    <AppWrapper>
       <header className="App-header">
         <img src={logo} alt="logo-react" className="App-logo" />
         <p>hey!</p>
       </header>
-    </div>
+    </AppWrapper>
   );
 }
 
