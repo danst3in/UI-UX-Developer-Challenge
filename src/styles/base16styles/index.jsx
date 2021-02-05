@@ -11,7 +11,7 @@ const theme = {
   grey: "#C9C0C0",
   white: "#FFFFFF",
   offWhite: "#F7F4F5",
-  maxWidth: "calc(0.88888 * 82.5rem)",
+  maxWidth: "82.5rem",
 };
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'); // not working in styled-components V5, moved to index.html */
@@ -21,7 +21,7 @@ export const NormalizeCss = createGlobalStyle`
   html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height:calc(0.88888 * 1.5rem);
+    line-height:1.5rem;
     /* font-size: 16px; */
     font-size: 18px;
     overflow:hidden;
@@ -29,31 +29,31 @@ export const NormalizeCss = createGlobalStyle`
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    line-height: calc(0.88888 * 3.5rem);
+    line-height: 3.5rem;
     font-size: 300%
   }
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    line-height: calc(0.88888 * 2.75rem);
+    line-height: 2.75rem;
     font-size: 225%
   }
   h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: calc(0.88888 * 1.875rem);
+    line-height: 1.875rem;
     font-size: 125%
   }
   small {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: calc(0.88888 * 3.5rem);
+    line-height: 3.5rem;
     font-size: 87.5%
   }
   input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* line-height: calc(0.88888 * 3.5rem);
+    /* line-height: 3.5rem;
     font-size: 87.5% */
   }
   a {

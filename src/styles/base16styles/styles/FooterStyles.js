@@ -8,6 +8,6 @@ export const AppFooter = styled.footer`
 `;
 
 export const FooterSmall = styled.div`
-  line-height: calc(0.88888 * 1.25rem);
+  line-height: 1.25rem;
   color: ${(props) => props.theme.grey};
 `;

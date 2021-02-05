@@ -8,10 +8,10 @@ export const ActionButton = styled.button`
     rgba(248, 87, 166, 1) 0%,
     rgba(255, 88, 88, 1) 100%
   );
-  width: calc(0.88888 * 22.5rem);
-  height: calc(0.88888 * 3.5rem);
-  border-radius: calc(0.88888 * 0.3125rem);
-  margin-top: calc(0.88888 * 1.25rem);
+  width: 22.5rem;
+  height: 3.5rem;
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
   /* text-align: center; */
   align-self: center;
   padding: 28px 0;
@@ -22,26 +22,26 @@ export const Form = styled.form`
   flex-flow: column nowrap;
   align-items: space-between;
   justify-content: space-between;
-  margin-top: calc(0.88888 * 1.09625rem);
+  margin-top: 1.09625rem;
   input {
     background: ${(props) => props.theme.offWhite};
-    border: calc(0.88888 * 0.0625rem) solid ${(props) => props.theme.grey};
-    border-radius: calc(0.88888 * 0.3125rem);
-    height: calc(0.88888 * 3.5rem);
-    margin-top: calc(0.88888 * 1.25rem);
+    border: 0.0625rem solid ${(props) => props.theme.grey};
+    border-radius: 0.3125rem;
+    height: 3.5rem;
+    margin-top: 1.25rem;
     padding: 20px 17px;
   }
 
   input[name="email"]:focus {
     outline-color: ${(props) => props.theme.pink};
-    border: calc(0.88888 * 0.0625rem) solid ${(props) => props.theme.pink};
+    border: 0.0625rem solid ${(props) => props.theme.pink};
     font-weight: 500;
-    line-height: calc(0.88888 * 1.5rem);
+    line-height: 1.5rem;
     font-size: 18px;
   }
 
   input[type="password"]:focus {
     outline-color: ${(props) => props.theme.pink};
-    border: calc(0.88888 * 0.0625rem) solid ${(props) => props.theme.pink};
+    border: 0.0625rem solid ${(props) => props.theme.pink};
   }
 `;

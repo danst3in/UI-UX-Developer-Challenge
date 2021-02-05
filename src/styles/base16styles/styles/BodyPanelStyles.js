@@ -8,7 +8,7 @@ export const BodyWrapper = styled.div`
   color: ${(props) => props.theme.black};
   grid-column-start: 2;
   grid-column-end: 3;
-  min-width: calc(0.88888 * 23.75rem);
+  min-width: 23.75rem;
 `;
 
 export const BodyPanel = styled.div`
@@ -19,12 +19,12 @@ export const BodyPanel = styled.div`
 
   h3 {
     margin: 0rem;
-    padding-top: calc(0.88888 * 3.15625rem);
-    padding-bottom: calc(0.88888 * 3.15625rem);
+    padding-top: 3.15625rem;
+    padding-bottom: 3.15625rem;
     text-align: center;
   }
   small {
-    padding-top: calc(0.88888 * 1.4375rem);
+    padding-top: 1.4375rem;
   }
 `;
 

@@ -30,7 +30,7 @@ fs.writeFileSync(path.resolve(__dirname, outputFile), "", () =>
 
 // replacement function
 const updateFont = (oldStyles, ratio) => {
-  const regex = new RegExp(/(\d*\.\d*)(rem)/gm);
+  const regex = new RegExp(/(\-?\d*\.\d*)(rem)/gm);
   const substitution = `calc(${ratio} * $1rem)`;
   return oldStyles.replace(regex, substitution);
 };
