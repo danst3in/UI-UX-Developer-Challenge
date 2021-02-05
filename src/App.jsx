@@ -36,7 +36,7 @@ import { useForm } from "./useForm";
 const AppWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 4.375rem;
-  grid-template-columns: 37.5rem 7fr;
+  grid-template-columns: 37.5rem minmax(31.25rem, 7fr);
   height: 100vh;
   text-align: center;
   p {

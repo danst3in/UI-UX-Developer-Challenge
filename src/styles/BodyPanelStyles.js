@@ -8,6 +8,7 @@ export const BodyWrapper = styled.div`
   color: ${(props) => props.theme.black};
   grid-column-start: 2;
   grid-column-end: 3;
+  min-width: 23.75rem;
 `;
 
 export const BodyPanel = styled.div`

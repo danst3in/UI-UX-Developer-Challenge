@@ -14,14 +14,17 @@ const theme = {
   maxWidth: "82.5rem",
 };
 
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'); // not working in styled-components V5, moved to index.html */
+
 export const NormalizeCss = createGlobalStyle`
   ${normalize}
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
   html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height:1.5rem;
-    font-size: 112.5%;
+    font-size: 16px;
+    /* font-size: 18px; */
+    overflow:hidden;
   }
   h1 {
     font-family: 'Montserrat', sans-serif;

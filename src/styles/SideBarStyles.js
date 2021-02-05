@@ -35,6 +35,7 @@ export const SideBar = styled.div`
     background: transparent;
     border: 1.25rem solid ${(props) => props.theme.white};
     opacity: 0.5;
+    overflow: hidden;
   }
   .botBox {
     position: absolute;
@@ -46,6 +47,7 @@ export const SideBar = styled.div`
     background: transparent;
     border: 2.5rem solid ${(props) => props.theme.white};
     opacity: 0.5;
+    overflow: hidden;
   }
 `;
 
