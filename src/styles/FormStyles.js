@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ActionButton = styled.button`
-  /* color: #ffffff; */
   color: ${(props) => props.theme.white};
   background: linear-gradient(
     0deg,
@@ -13,8 +12,9 @@ export const ActionButton = styled.button`
   border-radius: calc(0.88888 * 0.3125rem);
   margin-top: calc(0.88888 * 1.25rem);
   /* text-align: center; */
-  align-self: center;
-  padding: 28px 0;
+  /* align-self: center; */
+  border-top: 28px;
+  border-color: ${(props) => props.theme.pink};
 `;
 export const Form = styled.form`
   height: 13rem;

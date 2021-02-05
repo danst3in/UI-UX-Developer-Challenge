@@ -11,6 +11,7 @@ html{
   font - size: 18px
 }
 !with multiplication factor of 0.8888 */
+//* Example CLI command - `cat ./src/App.jsx | node utils/adjustBaseFontSize.js  0.88888 ./cssReCalc/App.jsx`
 
 const startTime = Date.now();
 console.log("startTime", new Date(Date.now()).toLocaleString());

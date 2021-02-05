@@ -56,6 +56,11 @@ export const NormalizeCss = createGlobalStyle`
     /* line-height: calc(0.88888 * 3.5rem);
     font-size: 87.5% */
   }
+  button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 100%
+  }
   a {
     color:${(props) => props.theme.pink};
     text-decoration: none;
