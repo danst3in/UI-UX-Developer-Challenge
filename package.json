@@ -1,9 +1,13 @@
 {
+  "version": "1.0.0",
+  "description": "Programming Challenge to show off UI/UX skills in React",
   "scripts": {
     "start": "snowpack dev --reload",
     "build": "snowpack build",
     "test": "NODE_ENV=test jest --watch"
   },
+  "author": "Dan Stein",
+  "license": "ISC",
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-react-refresh": "^2.3.9",
@@ -12,7 +16,6 @@
     "snowpack": "^3.0.1"
   },
   "dependencies": {
-    "modern-normalize": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1"
