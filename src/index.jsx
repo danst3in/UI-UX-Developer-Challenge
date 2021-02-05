@@ -22,8 +22,8 @@ export const NormalizeCss = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height:1.5rem;
-    font-size: 16px;
-    /* font-size: 18px; */
+    /* font-size: 16px; */
+    font-size: 18px;
     overflow:hidden;
   }
   h1 {
