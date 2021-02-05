@@ -16,20 +16,47 @@ const theme = {
 
 export const NormalizeCss = createGlobalStyle`
   ${normalize}
-
-/* @font-face{
-  font-family: 'radnikanext';
-  src: url('/static/radnikanext-medium-webfont.woff2')
-  format('woff2');
-  font-weight: normal;
-  font-style: normal;
-} */
-
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+  html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height:1.5rem;
+    font-size: 112.5%;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 3.5rem;
+    font-size: 300%
+  }
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 2.75rem;
+    font-size: 225%
+  }
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.875rem;
+    font-size: 125%
+  }
+  small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 3.5rem;
+    font-size: 87.5%
+  }
+  input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    /* line-height: 3.5rem;
+    font-size: 87.5% */
+  }
   a {
     color:${(props) => props.theme.pink};
     text-decoration: none;
   }
-
 `;
 
 // mount app

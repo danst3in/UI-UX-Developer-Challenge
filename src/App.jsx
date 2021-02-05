@@ -6,6 +6,7 @@ import { SideBar, SideBarLogo } from "./styles/SideBarStyles";
 import { BodyWrapper, BodyPanel } from "./styles/BodyPanelStyles";
 import { AppFooter, FooterSmall } from "./styles/FooterStyles";
 import { Form, ActionButton } from "./styles/FormStyles";
+import { useForm } from "./useForm";
 
 /**
  * TODO: Import Fonts
@@ -44,6 +45,8 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const [values, handleChange] = useForm({ email: "", password: "" });
+  const [reset, setReset] = useState(true);
   return (
     <AppWrapper>
       <SideBar>
@@ -62,13 +65,49 @@ function App() {
         <BodyPanel>
           <h3>Sign In</h3>
           <img src={bar} alt="styled-horizontal-bar" className="App-bar" />
-          <Form>
-            <input placeholder="Email"></input>
-            <input placeholder="Password" type="password"></input>
-            <ActionButton title="sign-in">SIGN IN</ActionButton>
+          <Form
+            data-test="form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              // setEmail("");
+            }}
+          >
+            <label htmlFor="Email"></label>
+            <input
+              name="email"
+              placeholder="Email"
+              value={values.email}
+              onChange={handleChange}
+            ></input>
+
+            {reset === true && (
+              <>
+                <label htmlFor="Password"></label>
+                <input
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  value={values.password}
+                  onChange={handleChange}
+                ></input>
+              </>
+            )}
+            <ActionButton title="sign-in" type="submit">
+              SIGN IN
+            </ActionButton>
           </Form>
           <small>
-            Forgot your password? <a href=""> Reset it here.</a>
+            Forgot your password?{" "}
+            <a
+              href=""
+              onClick={(e) => {
+                e.preventDefault();
+                setReset(!reset); // would make this more intelligent in production
+              }}
+            >
+              {" "}
+              Reset it here.
+            </a>
           </small>
         </BodyPanel>
       </BodyWrapper>
