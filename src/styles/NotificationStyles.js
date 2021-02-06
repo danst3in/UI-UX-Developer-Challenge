@@ -6,10 +6,16 @@ export const Notification = styled.div`
   flex-flow: row-reverse nowrap;
   align-items: center;
   justify-content: center;
-  top: 0rem;
-  right: 0rem;
+  top: calc(0.888 * 3.125rem);
+  right: calc(0.888 * 3.125rem);
   width: calc(0.888 * 25.5rem);
   height: calc(0.888 * 3.5rem);
+
+  border-radius: calc(0.888 * 0.3125rem);
+  background: ${(props) => props.theme.white};
+  box-shadow: 0rem calc(0.888 * 0.1875rem) calc(0.888 * 0.625rem)
+    rgba(0, 0, 0, 0.16);
+
   a.thumb {
     font-family: Montserrat;
     font-weight: 500;
