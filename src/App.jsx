@@ -14,13 +14,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Switch>
-        <SuccessContext.Provider value={providerValue}>
+      <SuccessContext.Provider value={providerValue}>
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/reset-password" exact component={ResetPassword} />
-        </SuccessContext.Provider>
-        <Route path="/" component={FourOhFour} />
-      </Switch>
+          <Route path="/" component={FourOhFour} />
+        </Switch>
+      </SuccessContext.Provider>
     </BrowserRouter>
   );
 }
