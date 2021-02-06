@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import App from "./App";
 import normalize from "./styles/modern-normalize";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
 
 const theme = {
   pink: "#F857A6",
@@ -13,8 +13,6 @@ const theme = {
   offWhite: "#F7F4F5",
   maxWidth: "calc(0.88888 * 82.5rem)",
 };
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'); // not working in styled-components V5, moved to index.html */
 
 export const NormalizeCss = createGlobalStyle`
   ${normalize}
@@ -30,25 +28,29 @@ export const NormalizeCss = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     line-height: calc(0.88888 * 3.5rem);
-    font-size: 300%
+    font-size: 266.7%
+    /* font-size: 300% */ /* at 16px */
   }
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     line-height: calc(0.88888 * 2.75rem);
-    font-size: 225%
+    font-size: 200%
+    /* font-size: 225% */ /* at 16px */
   }
   h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: calc(0.88888 * 1.875rem);
-    font-size: 125%
+    font-size: 111.111%
+    /* font-size: 125% */ /* at 16px */
   }
   small {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: calc(0.88888 * 3.5rem);
-    font-size: 87.5%
+    line-height: calc(0.88888 * 1.25rem);
+    font-size: 77.778%
+    /* font-size: 87.5% */ /* at 16px */
   }
   input {
     font-family: 'Montserrat', sans-serif;

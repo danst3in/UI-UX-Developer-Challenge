@@ -11,17 +11,17 @@ export const ActionButton = styled.button`
   height: calc(0.88888 * 3.5rem);
   border-radius: calc(0.88888 * 0.3125rem);
   margin-top: calc(0.88888 * 1.25rem);
-  /* text-align: center; */
-  /* align-self: center; */
-  border-top: 28px;
   border-color: ${(props) => props.theme.pink};
 `;
 export const Form = styled.form`
   height: 13rem;
+  .reset-password {
+    height: calc(0.8888 * 11rem);
+  }
   display: flex;
   flex-flow: column nowrap;
   align-items: space-between;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: calc(0.88888 * 1.09625rem);
   input {
     background: ${(props) => props.theme.offWhite};
