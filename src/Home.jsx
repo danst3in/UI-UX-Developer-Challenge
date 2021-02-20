@@ -14,7 +14,7 @@ import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
 const Home = ({ history }) => {
   const [values, handleChange] = useForm({ email: "", password: "" });
   const { reset, setReset } = useContext(SuccessContext);
-  // useErrorHandler(error);
+
   return (
     <AppWrapper>
       <ErrorBoundary FallbackComponent={Error}>
